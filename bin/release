@@ -3,6 +3,5 @@
 cat << EOF
 ---
 config_vars:
-  LIBRARY_PATH: "vendor/icu4c/lib"
   LD_LIBRARY_PATH: "vendor/icu4c/lib"
 EOF

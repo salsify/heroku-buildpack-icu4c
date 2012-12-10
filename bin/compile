@@ -1,0 +1,16 @@
+#!/bin/sh -e
+
+AWESOME_VM_BINARY="http://atmos-vulcan.herokuapp.com/output/bd2cd0eb-793f-4af9-b14d-7901b86affe4"
+AWESOME_VM_VENDOR="vendor/icu4c"
+
+# vendor awesome-vm
+mkdir -p $1/$AWESOME_VM_VENDOR
+curl $AWESOME_VM_BINARY -o - | tar -xz -C $1/$AWESOME_VM_VENDOR -f -
+
+indent() {
+  sed -u 's/^/       /'
+}
+
+echo "-----> Hooking you up with icu4c version 49.1.2"
+
+exit 0

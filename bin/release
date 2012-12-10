@@ -1,5 +1,3 @@
 #!/bin/sh -e
 # bin/release <build-dir>
 
-cat << EOF
-EOF

@@ -3,7 +3,9 @@
 cat << EOF
 ---
 config_vars:
-  LD_LIBRARY_PATH: "vendor/icu4c/lib"
+  PATH: "vendor/icu4c/bin:/usr/bin:/bin"
+  CFLAGS: "vendor/icu4c/include"
+  LIBRARY_PATH: "vendor/icu4c/lib"
 EOF
 
 exit 0

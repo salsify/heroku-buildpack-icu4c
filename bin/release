@@ -1,8 +1,6 @@
 #!/bin/sh -e
 # bin/release <build-dir>
 
-echo "-----> Releasing"
-
 cat << EOF
 ---
 config_vars:

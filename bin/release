@@ -1,6 +1,8 @@
 #!/bin/sh -e
 # bin/release <build-dir>
 
+echo "Running the release task"
+
 cat << EOF
 ---
 config_vars:
@@ -8,3 +10,5 @@ config_vars:
   CFLAGS: "vendor/icu4c/include"
   LIBRARY_PATH: "vendor/icu4c/lib"
 EOF
+
+echo "ran the release task"

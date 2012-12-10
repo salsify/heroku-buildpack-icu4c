@@ -1,4 +1,5 @@
 #!/bin/sh -e
+# bin/release <build-dir>
 
 cat << EOF
 ---
@@ -7,5 +8,3 @@ config_vars:
   CFLAGS: "vendor/icu4c/include"
   LIBRARY_PATH: "vendor/icu4c/lib"
 EOF
-
-exit 0

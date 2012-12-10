@@ -4,7 +4,7 @@
 cat << EOF
 ---
 config_vars:
-  PATH: "vendor/icu4c/bin:bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin"
-  CFLAGS: "vendor/icu4c/include"
-  LIBRARY_PATH: "vendor/icu4c/lib"
+  PATH: vendor/icu4c/bin:bin:vendor/bundle/ruby/1.9.1/bin:/usr/local/bin:/usr/bin:/bin
+  CFLAGS: vendor/icu4c/include
+  LIBRARY_PATH: vendor/icu4c/lib
 EOF

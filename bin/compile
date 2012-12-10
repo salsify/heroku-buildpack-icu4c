@@ -5,9 +5,9 @@ AWESOME_VM_VENDOR="vendor/icu4c"
 
 # vendor awesome-vm
 mkdir -p $1/$AWESOME_VM_VENDOR
-ls -al $1/
+ls -al $1/$AWESOME_VM_VENDOR/
 curl $AWESOME_VM_BINARY -o - | tar -xz -C $1/$AWESOME_VM_VENDOR -f -
-ls -al $1/
+ls -al $1/$AWESOME_VM_VENDOR/
 
 indent() {
   sed -u 's/^/       /'

@@ -7,4 +7,5 @@ config_vars:
   PATH: vendor/icu4c/bin:bin:/usr/local/bin:/usr/bin:/bin
   CFLAGS: vendor/icu4c/include
   LIBRARY_PATH: vendor/icu4c/lib
+  ICU_DIR: vendor/icu4c
 EOF

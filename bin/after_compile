@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/after_compile <build-dir>
 
-export PATH=$1/vendor/icu4c/bin:$PATH
-export CFLAGS=$1/vendor/icu4c/include:$CFLAGS
-export LIBRARY_PATH=$1/vendor/icu4c/lib:$LIBRARY_PATH
-export ICU_DIR=$1/vendor/icu4c
+export PATH=vendor/icu4c/bin:$PATH
+export CFLAGS=vendor/icu4c/include:$CFLAGS
+export LIBRARY_PATH=vendor/icu4c/lib:$LIBRARY_PATH
+export ICU_DIR=vendor/icu4c

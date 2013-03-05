@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-AWESOME_VM_BINARY="http://atmos-vulcan.herokuapp.com/output/bd2cd0eb-793f-4af9-b14d-7901b86affe4"
+AWESOME_VM_BINARY="http://vulcan-jredburn.herokuapp.com/output/86b0672b-ad88-457c-9dba-a57130bb16fe"
 AWESOME_VM_VENDOR="vendor/icu4c"
 
 # vendor awesome-vm
@@ -14,5 +14,9 @@ indent() {
 }
 
 echo "-----> Hooking you up with icu4c version 49.1.2"
+
+export PATH=/app/vendor/icu4c/bin:$PATH
+export CFLAGS=/app/vendor/icu4c/include:$CFLAGS
+export LIBRARY_PATH=/app/vendor/icu4c/lib:$LIBRARY_PATH
 
 exit 0

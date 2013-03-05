@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/env bash
 # bin/release <build-dir>
 
 cat << EOF

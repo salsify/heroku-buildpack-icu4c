@@ -10,7 +10,6 @@ mkdir -p $1/$AWESOME_VM_VENDOR
 ls -al $1/$AWESOME_VM_VENDOR/
 curl $AWESOME_VM_BINARY -o - | tar -xz -C $1/$AWESOME_VM_VENDOR -f -
 ls -al $1/$AWESOME_VM_VENDOR/
-echo "Installing icu4c v 50.1.2 in $1/$AWESOME_VM_VENDOR"
 
 indent() {
   sed -u 's/^/       /'
